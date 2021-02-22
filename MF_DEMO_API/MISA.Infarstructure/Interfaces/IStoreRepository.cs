@@ -7,5 +7,6 @@ namespace MISA.DataLayer.Interfaces
 {
     public interface IStoreRepository: IDbContext<Store>
     {
+        public IEnumerable<Store> GetFilter(Object filter);
     }
 }
